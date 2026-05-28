@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ritz Bali">
+<title>Bali Countdown — The Ritz-Carlton, Nusa Dua</title>
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bali Countdown">
+<meta property="og:description" content="The Ritz-Carlton, Nusa Dua — wheels up 26 July, 7am Melbourne.">
+<meta property="og:image" content="https://pilot-pik.github.io/bali-countdown/og-image.png">
+<meta property="og:url" content="https://pilot-pik.github.io/bali-countdown/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='40' fill='%23001E3C'/><text x='50%25' y='62%25' font-size='110' font-family='Didot, serif' text-anchor='middle' fill='%23B08D57'>R</text></svg>">
+<style>
+  :root {
+    color-scheme: dark;
+    --navy:   #001E3C;
+    --navy-2: #0A2E52;
+    --gold:   #B08D57;
+    --cream:  #F2E9DC;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    height: 100%;
+    color: var(--cream);
+    background:
+      radial-gradient(ellipse at top, var(--navy-2) 0%, var(--navy) 60%, #000814 100%);
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: "Didot", "Bodoni 72", "Times New Roman", serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: env(safe-area-inset-top) 28px env(safe-area-inset-bottom);
+  }
+  .logo {
+    width: 200px;
+    max-width: 65vw;
+    height: auto;
+    margin-bottom: 28px;
+    opacity: .95;
+  }
+  .rule {
+    width: 56px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 22px;
+    opacity: .8;
+  }
+  h1 {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+  }
+  .sub {
+    font-style: italic;
+    font-size: 19px;
+    opacity: .85;
+    margin-bottom: 40px;
+    letter-spacing: .3px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 360px;
+  }
+  .cell {
+    border: 1px solid rgba(176, 141, 87, .35);
+    border-radius: 4px;
+    padding: 16px 4px 12px;
+    background: rgba(255,255,255,.02);
+  }
+  .num {
+    font-size: 32px;
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    color: var(--cream);
+    font-family: "Didot", "Bodoni 72", serif;
+  }
+  .lbl {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--gold);
+    margin-top: 10px;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+  }
+  .when {
+    margin-top: 36px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: .55;
+    color: var(--cream);
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+  }
+  .place {
+    margin-top: 6px;
+    font-style: italic;
+    font-size: 13px;
+    opacity: .65;
+  }
+</style>
+</head>
+<body>
+  <img class="logo"
+       alt="The Ritz-Carlton"
+       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcYAAAC0CAQAAACk9kTcAAAAAW9yTlQBz6J3mgAAJd5JREFUeNrtnWeAFEXexn+zu+Sw5KAcgqCggkgQMQcMKMqBYkIFjJiziGLCOxU9DK+KihFFPBXEjKhgFkVFRIIiIBmUjMQFdp/3w9T2Vs/0zAZWurmt5/kwXVX/qq7q6aerulLHhMP/MI6nPQ+yNexsOBQFMSfG/1FkcQb9aQN8S1dWh50dh8LhxPi/iHJcSH+aksdUVtOZ6RzFqrAz5VAYnBh3dRxGH2oynSksIZdsqlKdW2jFpzzH22wA7uQuvuZYtoSdVYdCIMddmf9WEBboeKHyulxdhdDtkoaGnlfHQuhqxl0N5fgHDWlETWqwL+cFWCzlIBbTiA/Zl+bMBeBlenE+H/JH2Nl3SA0nxl0FFbiA49iX5mQWYtmbEcAYerCZygD0ZSw/Ux9YzNe8w/usC7s4DslwYtw1UI2P6ATAVhawnNWsYD2wjhh12ItOVPVsG/AnMJc9gbb8BHzE8zTnX57FVt7g38wMu1AOCQi7nexYJL4k6RN1VyPFAsPLqYveVZ4kqaUQ+lyStFK36X7l6kodIuknzfDeK7frltBL5ehj6BlwLAI7ShqvqjpGfXW0yqe020fvSnpZCJ1sdejkaR8dKukDoQ4a5/kPDL1kjhZDz4BjGj4q6Qtvx5v9zTcXt+pB1RZC+2qMEdI4dfH6TatqtBneQOhFn+Au8fzvTJDi5rR7BzjuBIaeAcc0zNZ8SWPUWt00xkxsG6/mQmhfvao8SVv1vK/2rKNJetBzXeATXMEncwYm9cZ+EXppyzxDz4BjWrbyDepv0RWKCdXUY9ouKU8vqqnPvromaYPXL9pGm63YT5q6s2LCrqpxuO8Yh87QM+BocTdNlzRTPRQTaqcbS5TKpWYQJI4t6iWEztL1iglNUU1JmrjzGqnFhZ4Bx5Q8U99LkmaqugYrJqRTSpXOzGSrlx2L8VS9p1xJG3RW6JfRsXg8wHsf28K7olH4APH8DyEjKa2BFnB42AVPgYz4Tw7VWUodyrOFv8jhT3ITDOuxhVrEgI3kkk0Vc7yWpazAyJEs9maT72wOOxsONjJoyVwhhP6Q9JU+1+vqLZSpAd5T7g8VvNm/JaG4cBfraB1qmuVnSpKulVrUMUmDfPmd/k71yJREVPHHFvqf7yKBEXMRWzc4D8C0sLgGmTr6KaZTsbcRdNpkRdGW5LSTOoSdMjijVm5HsbXRpd6dQRDqkfp/Fb4iSpFvUtFOQQy9TY+5HiR/HCwL2KsRGcZ9PUEFltzGtnRsZxOZWcgnmCkc/Lc24+rTzQYUtjbiB6kQuJgvuyOQuOJgwAfm1ZSc/85JvkUKeBymCk9rOWeczI6/g+IL84UMmO2lmDeQA+nMxd4nGTfDgWY36HRO5KJtnnHKnf2HC0iJ8XLuLkbcRTpHmlz0+0a5edTukRfwExJ31TNjI7yfdXP6FRwf+RD+jJOZxF8wzWVcyiJg9YQrYi6L43oZmgmf2t1ud84r/T+9HzMtsBkznL3PddOSvY6jh8FRcKlV0jXsR12fl56qiNDfvFKlBmTYbpz0kCSj0pHcD1aqddTW7lpoX8h1AjRGB8wxlF7Hmwi8XaR4lWVwIuMNUtucGEMxJI50FOIc/8jt7c2onpyOdr3MbcCBfwz+t6JeunRm3eYMzfa6KpqxrYIuV0qiZ7n5xOWWFmKp7CCKp4ZyrJwT+S/3JsXNJZyvRGOOhqLfaJ97yMUphCRZsBJl8Cd4xFGsApe1ttzMTudv9JKtxOe2Vc5mKzNkbjMUWMnMpfsbzPdQGY/JuopAvBl/zh68jrFNL+P+TmBZNeFEWKBHE83XmsjQ+gw1KSGGTuyJzMBp2tIDFC2TyJOI58bN3IfvbiFV1nKE5wMnAQs5gZmA9TmIvIYx4mczUUkfgQAGM7lXjMrjeMZxLAEgGruZj0fexb/0pNwAbgF6owDdjMXdR0nf/PIIM9d6BDl8GpgKHPaUaP6V8FgZ/UmkO5fYAaUYIKwjvkdAhpDk+0xCh/lz+1gOL3Oc55hPbjLOK6BUWnMqA72jvViNCu3Gd9zE2I3whuoBxAB+ABwGGAhDYIa1nN/Wzz+TZmGgCD/Tu0G3xtbeXcDXjUuI6mfeKnRdM9G8tDhe6e2DH4LsOSI3v8IfGYL6oMA8z5Q7HvfTrJ59wYP00twNZK1mC9YR2/cBh1mzWv9TLZ9I6cyXowyXgC8ZJWfn1qaFloLPyiUMv0aQyrIWzZ2YyXjqUI3I4Cy8Bw8VKjxh5RoT+UTBy9lLeF6X8L+kVTbgZmAtcyTjjs5y3GG/cN9ldHCwsAYBpngE7TGAh8AcAFcjAlELRwAUscD5dQDuTRdHWSCNcjEnQI7w7WyhAlXMHl++DBjXBHbnsglNynkbgrtPdgmu44JJ6BhqWzbjzHWBu5o2nT2YbeAjK4hbN8WfBI7m8ovQ9wIaB42jKMfTw3oirAlD6BBYWWAaMA64IDkbZTFEC1pRADcNxVUkfQOgxhPxAVuY7nuYpEbZxAKwLgRgB28LBdgD9TgDoBV3OPF/IXcCQQAKjLnubQEEbjJtdAvgScANCRH+lvjnubM1blvb5TmAH0pwK9PJZjPL3M0R4cR0eOoCqj+J6h5h44gw1WAW8wlqU7sNwBlPM+27Y9oZ4DKMcWpqcVo5Gu5ihxgcU2bzAjWIzlGGSlsZ7BlsmKAFm1zEZjAdyrSi6Wm/EYzeYTbk6QYg3eAaABDXmF1QmJZ5GZIETIYbtR9CYWWXOpa1KPMmYUKsZqOyJG/uJxxiQEVPM2RGzELABO53/cZl0gE7ZykvkP09NQfXKWpw9MZAdjyQpQyM2WT4ax+5XX2ZsazPYdN+JLNoVdGymo1ldcSk0fAahCDU40LSp1KZf2dNVoxC2bX1nlV9KsmCs5pKAvJsXJyZ1c5JBNbeIzZSXyqIRq/CWmEUtR9hjVPC2vsxoLk+Y/zJDuxidnpwTm5kQ+IjeAOyAGAH+a6X1bvb0RDxKZkLNJaCi1cyaT/sR/k3oBfPjwAlAVeABYvSAaTQyfdMjAajD16YxXTw3T+QM4F2gp+Vbg9P5HRgT3CCKDhqzAVgKQAUq8z/u8R4ITcimP7VTNJC2gG/HuEzeIH5J9khjszGNvWFNK/AmYG3iVKVm6vC2pK0aoX7qoGyhmHpqibZJktbquYS3+8OUkz9PR79osfH/3DfX1Tek09qkX8s7Q3ldroJG2GE6P3SVKR4WqyEUF59piiQt0xRtNu5JBftA6FxJ0sj04+gjJUmrChvWqGgsuhTHukARjikgrCqf+OYYM7VWklZpguabodq16us9ELI11Xtj7C7pTkmaH/yvBdtl6BVzVHB16PuZ2KuQTW69mhTRDC2QJM3RRBuhTRpqxIvKaXp8e4LkraEHFXFm0XFkhmIDQGxoYbtbe/RPjjlBOcjQUBvfeWN+JG4HxbDejlfXNN8e2/zNoGfdYZmjE+IkmKZRdQczc+VkITQ4MM5p3vakhUwHQM85WRomxqGXqMzx10Im6dxiSWmCqkc+10aXrJVU1Z3+sqEONjeRY4vYpRIIkX9YwZmoB5jrIeb3qfM4kVUYMyAOcFvJovgFKv6yk/CO0PhBNGsP1S+9PR+ZnRDB1jbHvavFiq/X94+pHRoTpgBaB5VbAj+CLgyL/8d4ck/ToFG3hVcAfwhrG+TVHCKE2WiVJWqLLrI+f0Vw1tEbSGklbtdpsq3iwVy/3MfVixu+e7yIvja06y9SBLfWBJC3UYUI19a4kHRdW8R0DGHIGGsuasvCSGd4f7Q1bPCdJ6m0ZRVeMTfWyJOleY/AvSdLP1lr7+vrAW3Hxto7TQp1qulkqaa3yjPjmJqzbA/0iSXrIeMV7iY2DPncMjyFnoMHvkqRRGmCmpa1RrtZpup7TLeqr/uotaaIqe9rqL2lz5JqpDXSjJOlH/aWNxvKepGGmazRDIzVCjxhRPSeUYa1lXKvf/SkLZWi06ZG9TzHFhDLM/Nvtmqg7davyrwd6Iaxr4hjE0DOgmDIVUznv8a6X9JI3wTm/STZAUm9V8WLEdLckLU2YsRMmYzpEN+sPSdJ8M5dnvqmrFqmnaaJur4WqLpStWdomScpVjnIlSWN8AqupOiqnP1XwOEKt9HtCp+ufkqQ3w7omjkEMPQM26+pJI8MWaUSeo7G6yJqmHV97uDDdovGdyiq6S+v0kEYpXh9eYU3Ml+J9wgvUWBO0RUMUE+pgaq8/9aGuNTbVPbHO0OemBfBkUu1+iyTpibCviqOfoWcggDU9X7E2QHRD9YgGq50nzEzPF12i6Z5Ld9KCB/PROgrjr5pyhJrqGNN4/9LMHV2g+Lzbcd5dyTGbB04xUyAukST97AnZv+QqU3qrjI4HRwO7gBgRyvDmuhSwYsLE9oOMUMcVklIzM2j+pgYGzlEpL3Sb0NM7lFKMcSzlmKQYxxh38vTBOlYzeQ9N1lqfvMcoO9CqplYqJjQyuT/W0DEi3CXEWMBYRsBSWBuJ08PiTaIBxiVlOMlnFTPdjsHs5gv/3GtwlpY8MujqOTbV8sCxlWxxiSlMfQAEr2hxjBxDz0DRGdyXmENGiibhFumOdAuyTArMLfTOvLn0hOSt+u/qfsucniLcL0XJ6FX8Xfp/lXKKjqXP0DPwd/AzPSXTLDxd2yWtsmrQuOmrSf2DZ+lib7+e6vrIdL5Ek3GsLLEN/N4q/+JS/yWmnK+zKvSyOpqHc9gZ+Buwgmd5jXkAVOJk+tCJqtSnK/UYTRYz+JLPmM5GIIPq1KEm+9OefdmHFsTbnHkM8fbBjxqyOIDDvKVje5DDLP4M5RVqGss5gG2hF99hl4WoxofKszZuyNUMjVCu5Vqp/oFjpEKZqi6Lyt5lW0PHlAw9Azs1ehTSwIxpvDxhfacM3SK7uhsdcK4Y5lvJtaTRrl1eHV0z9W/CO+ZjC8loymUcyu7sQXkqAlvIYR4LWMc3VOEoY7Wf5RpjkjRGtxyKjbX9hVAVdQ7sLnIIA+G/m4ZNnaSXkj7omv7rGYWPucXfNCsmrJjpFFAhOSVZi2qpJOlBSXM92dlj63i7vT3CtUIHa6PWmsX/JeRZ2mxmwIaehUgw9AyEz30sCSXNzImvxJ8R7DfWy+Tj4LBeAdvLpVrgvDsx7e2bZTLN8m+vyZK0u7lXJBQTaqgqYV9JR5+9R4ahkx5+Wzd5LtMSt0VYrMnaqmkavJM2u46OoWcgQrxRT2qsbpdQQ001bsf7+CWtUq4WaqRu90nynfDz73iJpurAhPB66qBuOka1zV1mIVRZL2lqgs2KQqYbOIbCntKa0K9c5Bh6BiLO+IDvAt2qC3SsTrYHfDQ8eaA/Mqyo541BVrYajVbjwzG5dgxgvJDjQ8+IY4lo9Yl2DkUlqxJ8ANCYR5jHe8wDhrPS+gxa1Bl/oa9NN+CWsAvqkAhXM5YR+gd/ZGsP65uMU7+v3Y6h5sCMv3oTGN3CsAjC1Yz/E4ix0pveU8XzWcrz4WTHIQiumeqQjC2eU9XLPe+xdAzlevAWb6cw7AvqEAxXMzr40dGsvxxOReBxxoIbWokq3HMyEpjP+0AOXzGexZTjAt+nzhwiBSdGB4tH+iY9ZHEqAFXIIGc2dxQ+9d8hLDgxOpjPyHbn1IRb4WW2cAJ7AqdwduCneRwiAydGB+AbOgKNeJUWtKQ1NajKfA5jKvAYHTjBfRMo6nADOA5DkrYAr2lFTfYjm63MZTGv8DRrgKnewn2HiMP1pjoUF1m+L1Q4RABuooaDQ0Tg3hkdHCICJ0YHh4jAidHBISJwYnRwiAicGB0cIgInRgeHiMCJ0cEhInBidHCICJwYHRwiAidGB4eIwInRwSEicGJ0cIgInBgdHCICJ0YHh4jAidHBISJwYnRwiAj+H7e6XaH+t/E5AAAAAElFTkSuQmCC">
+  <div class="rule"></div>
+  <h1>Bali Awaits</h1>
+  <div class="sub">Nusa Dua, in…</div>
+
+  <div class="grid">
+    <div class="cell"><div class="num" id="d">–</div><div class="lbl">Days</div></div>
+    <div class="cell"><div class="num" id="h">–</div><div class="lbl">Hours</div></div>
+    <div class="cell"><div class="num" id="m">–</div><div class="lbl">Min</div></div>
+    <div class="cell"><div class="num" id="s">–</div><div class="lbl">Sec</div></div>
+  </div>
+
+  <div class="when">26 July 2026 · 07:00</div>
+  <div class="place">Melbourne departure</div>
+
+<script>
+  // 07:00 AEST (Melbourne, July = no DST) = 21:00 UTC on 25 July
+  const target = Date.UTC(2026, 6, 25, 21, 0, 0);
+  const $ = id => document.getElementById(id);
+  function tick() {
+    let diff = Math.max(0, target - Date.now());
+    const d = Math.floor(diff / 86400000); diff -= d * 86400000;
+    const h = Math.floor(diff / 3600000);  diff -= h * 3600000;
+    const m = Math.floor(diff / 60000);    diff -= m * 60000;
+    const s = Math.floor(diff / 1000);
+    $('d').textContent = d;
+    $('h').textContent = String(h).padStart(2,'0');
+    $('m').textContent = String(m).padStart(2,'0');
+    $('s').textContent = String(s).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>
